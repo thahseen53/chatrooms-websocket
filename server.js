@@ -75,6 +75,6 @@ io.on("connection", function (socket) {
   });
 });
 
-server.listen(5000, function () {
+server.listen(process.env.port||5000, function () {
   console.log("Listening to port 5000.");
 });
